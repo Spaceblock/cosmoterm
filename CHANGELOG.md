@@ -17,3 +17,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 [unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v1.1.1...HEAD
 [0.0.1]: https://github.com/IvanIsak2000/Spaceblock/releases/tag/v0.0.1
+
+
+[v.0.02]
+### Added
+- blank `log_in.html`
+- blank `sign_in.html`
