@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 from sys import argv
 from flask import Flask, render_template
 from waitress import serve
