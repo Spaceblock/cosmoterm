@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block contents %}
+<div class="card mx-auto border-success" style="width: 50%;">
+    <div class="card-body">
+        <h1 class="card-title">An error occured!</h1>
+        <h2 class="card-subtitle mb-2 text-body-secondary">{{context.code}}</h2>
+        <p class="card-text">{{ context.message }}</p>
+    </div>
+</div>
+{% endblock %}

@@ -10,12 +10,30 @@
 @import "../../node_modules/bootstrap/scss/type";
 @import "../../node_modules/bootstrap/scss/images";
 @import "../../node_modules/bootstrap/scss/containers";
-@import "../../node_modules/bootstrap/scss/grid";
-/*
-$bs-body-font-family: 'Supermercado One', monospace, sans-serif;
+
+$bs-body-font-family: 'Supermercado One',
+monospace,
+sans-serif;
 $bs-font-sans-serif: 'Supermercado One';
+$-bs-navbar-brand-color: black;
+$-bs-navbar-brand-color: black;
+
 :root {
     --bs-body-font-family: 'Supermercado One', monospace, sans-serif;
     --bs-font-sans-serif: 'Supermercado One';
+    --bs-navbar-brand-color: black;
+    --bs-body-bg: #B0FE76;
+    background-color: #B0FE76;
 }
-*/
+
+$primary_button_bg_color: #B0FE76;
+
+.btn-primary {
+    @include button-variant($primary_button_bg_color,
+        darken($primary_button_bg_color, 7.5%),
+        darken($primary_button_bg_color, 10%),
+        lighten($primary_button_bg_color, 5%),
+        lighten($primary_button_bg_color, 10%),
+        darken($primary_button_bg_color, 30%));
+    color: #5ed902;
+}
