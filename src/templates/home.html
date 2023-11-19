@@ -1,17 +1,35 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet" />
-        <link href="../static/home.css" rel="stylesheet" />
-        <title>Home</title>
-    </head>
-<body>
-    <div class="v1_3">
-    <div class="home">
+{% extends 'base.html' %}
+{% block contents %}
+<nav class="navbar navbar-expand-rg bg-body-tertiary p-1">
+    <div class="container-fluid"></div>
+    <a class="navbar-brand" href="yandex.ru">
+        <h1>cosmoterm</h1>
+    </a>
     </div>
-        <span class="sigh_up link-ease-in-out"><a href = "#">Sign up</a></span>
-        <span class="log_in link-ease-in-out"><a href="#" >Log in </a></span>
-        <span class="name">Spaceblock</span>
+    <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <a role="button" href="/login" class="btn btn-primary">login</a>
+        <a role="button" href="/signin" class="btn btn-secondary">signin</a>
     </div>
-</body>
-</html>
+</nav>
+<div class="card mx-auto" style="width: 50%;">
+    <div class="card-body">
+        <h5 class="card-title">what is it?</h5>
+        <p class="card-text">Cosmoterm is now under development, and we're unsure
+            what it currently is.</p>
+    </div>
+</div>
+
+<footer>
+    &copy 2023
+    <a class="link-secondary link-offset-2 link-underline-opacity-25
+  link-underline-opacity-100-hover" href="https://github.com/spaceblock">spaceblock</a> by
+    <a class="link-info link-offset-2 link-underline-opacity-25
+  link-underline-opacity-100-hover" href="https://github.com/ivanisak2000">@IvanIsak2000</a> and
+    <a class="link-info link-offset-2 link-underline-opacity-25
+  link-underline-opacity-100-hover" href="https://github.com/mb6ockatf">@mb6ockatf</a>
+</footer>
+{% endblock %}
